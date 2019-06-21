@@ -4,8 +4,10 @@ const Skills = ({children}) =>(
     <div className="Skills">
         <div className="Skills-container">
             <div className="Skills-item">
-                <h3>Tec de Monterrey</h3>
-                <p>Aprendí muchisimas cosas</p>
+                <h5>HTML5</h5>
+                <div className="Skills-line">
+                    <span>95%</span>
+                </div>
             </div>
         </div>
     </div>
