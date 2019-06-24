@@ -1,14 +1,18 @@
 import React from 'react'
 
-const Education = ({children}) =>(
+const Education = props => (
     <div className="Education">
-        <div className="Education-container">
-            <div className="Education-item">
-                <h3>Tec de Monterrey</h3>
-                <p>Aprendí muchisimas cosas</p>
-            </div>
+        <div className="Education-Container">
+            {props.data.map((edu, index) => (
+                <div className='Education-item' key={`Education-${index}`}>
+                <h3>{edu.degree} {edu.institution} <span>{edu.startDate} - {edu.endDate}</span></h3>
+                <p>{edu.description}</p>
+                </div>
+            ))}
         </div>
+      
     </div>
-);
+  );
 
 export default Education;
+

@@ -1,36 +1,50 @@
 {
-  "name": "curriculum",
+  "name": "cv-react-hooks",
   "version": "1.0.0",
-  "description": "Create my CV with React",
+  "description": "Create a simple Curriculum Vitae with React Hooks",
   "main": "index.js",
   "scripts": {
-    "build":"webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahiraaam/curriculum.git"
   },
-  "author": "",
+  "keywords": [
+    "react",
+    "hooks",
+    "javascript",
+    "medellinjs",
+    "medellin"
+  ],
+  "author": "oscar Barajas <oscar@dragons.mx>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ahiraaam/curriculum/issues"
+    "url": "https://github.com/gndx/react-hooks/issues"
   },
-  "homepage": "https://github.com/ahiraaam/curriculum#readme",
-  "dependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
+  "homepage": "https://github.com/gndx/react-hooks#readme",
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "favicons-webpack-plugin": "0.0.9",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "jest": "^24.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "development": "0.0.6",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "styled-components": "^4.1.3"
   }
 }
