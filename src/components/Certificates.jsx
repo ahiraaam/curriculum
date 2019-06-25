@@ -6,7 +6,6 @@ import PStyled from '../styled/PStyled';
 const Certificates = props =>(
     <div className="Certificates">
         <H2Styled name="Certificates"></H2Styled>
-        <div className="Certificates-container">
             {props.data.map((cer,index) => (
                 <div className="Certificates-item" key={`Certificate-${index}`}>
                     <H3Styled>{cer.date} {cer.institution} {cer.name}</H3Styled>
@@ -14,7 +13,6 @@ const Certificates = props =>(
                 </div>
             ))}
             
-        </div>
     </div>
 );
 

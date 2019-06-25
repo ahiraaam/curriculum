@@ -31,11 +31,24 @@ module.exports = {
             }
         ]
     },
-    plugins:[
+    plugins: [
         new HtmlWebPackPlugin({
-            template:"./public/index.html",
-            file:"./index.html"
+          template: "./public/index.html",
+          filename: "./index.html"
         }),
-        new FaviconsWebpackPlugin('./public/react.png'),
-    ]
+        new FaviconsWebpackPlugin({
+          logo: './public/react.png',
+          prefix: 'assets/',
+          inject: true,
+          background: '#fff',
+          title: 'React CV',
+          icons: {
+            android: true,
+            appleIcon: true,
+            favicons: true,
+            opengraph: false,
+            twitter: false,
+          }
+        }),
+      ],
 }

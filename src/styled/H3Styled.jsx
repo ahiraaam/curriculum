@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledH3 = styled.h3  `
+const StyledH3 = styled.h3 `
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: .5em 0 ;
