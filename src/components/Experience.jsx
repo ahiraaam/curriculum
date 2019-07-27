@@ -1,5 +1,5 @@
 import React from 'react';
-import H2Styled from '../styled/H2Styled';
+import H2Styled from '../styled/h2styled';
 import H3Styled from '../styled/H3Styled';
 import PStyled from '../styled/PStyled';
 
